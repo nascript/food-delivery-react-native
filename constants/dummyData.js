@@ -3,7 +3,7 @@ import { icons, images } from './'
 const myProfile = {
   name: 'Nasution',
   profile_image: images.profile,
-  address: 'No. 88, Jln Padungan, Kuching',
+  address: 'KM 14.5, Jln Kaliurang, Yogyakarta',
 }
 
 const categories = [
@@ -72,7 +72,6 @@ const menu = [
   {
     id: 1,
     name: 'Featured',
-
     list: [hamburger, vegBiryani, wrapSandwich],
   },
   {
