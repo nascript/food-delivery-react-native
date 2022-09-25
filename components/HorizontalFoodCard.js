@@ -39,7 +39,7 @@ const HorizontalFoodCard = ({ containerStyle, imageStyle, item, onPress }) => {
         }}
       >
         <Image source={icons.calories} style={{ width: 30, height: 30 }} />
-        <Text style={{ calor: COLORS.darkGray2, ...FONTS.body5 }}>
+        <Text style={{ color: COLORS.darkGray2, ...FONTS.body5 }}>
           {item.calories} Calories
         </Text>
       </View>

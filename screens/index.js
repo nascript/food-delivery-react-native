@@ -1,25 +1,29 @@
-import MainLayout from "./MainLayout"
+import MainLayout from './MainLayout'
 
 // Home
-import Home from "./Home/Home"
+import Home from './Home/Home'
+
+//FilterModal
+import FilterModal from './Home/FilterModal'
 
 // Search
-import Search from "./Search/Search";
+import Search from './Search/Search'
 
 // Cart
-import CartTab from "./Cart/CartTab"
+import CartTab from './Cart/CartTab'
 
 // Favourite
-import Favourite from "./Favourite/Favourite";
+import Favourite from './Favourite/Favourite'
 
 // Notification
-import Notification from "./Notification/Notification"
+import Notification from './Notification/Notification'
 
 export {
-    MainLayout,
-    Home,
-    Search,
-    CartTab,
-    Favourite,
-    Notification
+  MainLayout,
+  Home,
+  Search,
+  FilterModal,
+  CartTab,
+  Favourite,
+  Notification,
 }

@@ -27,8 +27,6 @@ const TabButton = ({
   innerContainerStyle,
   onPress,
 }) => {
-  console.log('outerContainerStyle', outerContainerStyle)
-  console.log('innerContainerStyle', innerContainerStyle)
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <Animated.View
