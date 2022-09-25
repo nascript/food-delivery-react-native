@@ -77,27 +77,27 @@ const menu = [
   {
     id: 2,
     name: 'Nearby you',
-    list: [hamburger, vegBiryani, wrapSandwich],
+    list: [hotTacos, vegBiryani, hamburger],
   },
   {
     id: 3,
     name: 'Popular',
-    list: [hamburger, hotTacos, wrapSandwich],
+    list: [vegBiryani, hotTacos, wrapSandwich],
   },
   {
     id: 4,
     name: 'Newest',
-    list: [hamburger, hotTacos, vegBiryani],
+    list: [wrapSandwich, hamburger, vegBiryani],
   },
   {
     id: 5,
     name: 'Trending',
-    list: [hamburger, vegBiryani, wrapSandwich],
+    list: [hamburger, vegBiryani, hotTacos],
   },
   {
     id: 6,
     name: 'Recommended',
-    list: [hamburger, hotTacos, wrapSandwich],
+    list: [hotTacos, hamburger, wrapSandwich],
   },
 ]
 
