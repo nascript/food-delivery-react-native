@@ -226,7 +226,7 @@ const MainLayout = ({
         containerStyle={{
           height: 50,
           paddingHorizontal: SIZES.padding,
-          marginTop: 40,
+          marginTop: 23,
           alignItems: 'center',
         }}
         title={selectedTab?.toUpperCase()}

@@ -77,12 +77,12 @@ const menu = [
   {
     id: 2,
     name: 'Nearby you',
-    list: [hotTacos, vegBiryani, hamburger],
+    list: [hotTacos, vegBiryani, wrapSandwich],
   },
   {
     id: 3,
     name: 'Popular',
-    list: [vegBiryani, hotTacos, wrapSandwich],
+    list: [hamburger, vegBiryani, wrapSandwich],
   },
   {
     id: 4,
@@ -92,7 +92,7 @@ const menu = [
   {
     id: 5,
     name: 'Trending',
-    list: [hamburger, vegBiryani, hotTacos],
+    list: [hotTacos, vegBiryani, hamburger],
   },
   {
     id: 6,
