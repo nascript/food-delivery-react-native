@@ -208,6 +208,55 @@ const Home = () => {
     )
   }
 
+  function renderFoodCategories() {
+    return (
+      <FlatList
+        data={dummyData.categories}
+        keyExtractor={(item) => `${item.id}`}
+        horizontal
+        showHorizontalScrollIndicator={false}
+        renderItem={({ item, index }) => (
+          <TouchableOpacity
+            style={{
+              flexDirection: 'row',
+              height: 55,
+              marginTop: SIZES.padding,
+              marginLeft: index == 0 ? SIZES.padding : SIZES.radius,
+              marginRight:
+                index == dummyData.categories.length - 1 ? SIZES.padding : 0,
+              paddingHorizontal: 8,
+              borderRadius: SIZES.radius,
+              backgroundColor:
+                selectedCategoryId == item.id
+                  ? COLORS.primary
+                  : COLORS.lightGray2,
+            }}
+            onPress={() => {
+              setSelectedCategoryId(item.id)
+              handleChangeCategory(item.id, selectedMenuType)
+            }}
+          >
+            <Image
+              source={item.icon}
+              style={{ marginTop: 5, height: 50, width: 50 }}
+            />
+            <Text
+              style={{
+                alignSelf: 'center',
+                marginRight: SIZES.base,
+                color:
+                  selectedCategoryId == item.id ? COLORS.white : COLORS.black,
+                ...FONTS.h3,
+              }}
+            >
+              {item.name}
+            </Text>
+          </TouchableOpacity>
+        )}
+      />
+    )
+  }
+
   return (
     <View
       style={{
@@ -223,6 +272,9 @@ const Home = () => {
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <View>
+            {/* Food Category Section */}
+            {renderFoodCategories()}
+
             {/* Popular Section */}
             {renderPopularSection()}
 
@@ -252,6 +304,7 @@ const Home = () => {
             />
           )
         }}
+        ListFooterComponent={<View style={{ height: 210 }}></View>}
       />
     </View>
   )

@@ -28,7 +28,7 @@ const hamburger = {
   id: 1,
   name: 'Hamburger',
   description: 'Chicken patty hamburger',
-  categories: [1, 2],
+  categories: [1, 2, 4],
   price: 15.99,
   calories: 78,
   isFavourite: true,
@@ -39,7 +39,7 @@ const hotTacos = {
   id: 2,
   name: 'Hot Tacos',
   description: 'Mexican tortilla & tacos',
-  categories: [1, 3],
+  categories: [3, 2],
   price: 10.99,
   calories: 78,
   isFavourite: false,
@@ -53,7 +53,7 @@ const vegBiryani = {
   categories: [1, 2, 3],
   price: 10.99,
   calories: 78,
-  isFavourite: true,
+  isFavourite: false,
   image: require('../assets/dummyData/veg_biryani.png'),
 }
 
@@ -61,7 +61,7 @@ const wrapSandwich = {
   id: 4,
   name: 'Wrap Sandwich',
   description: 'Grilled vegetables sandwich',
-  categories: [1, 2],
+  categories: [1, 2, 3],
   price: 10.99,
   calories: 78,
   isFavourite: true,
@@ -72,7 +72,8 @@ const menu = [
   {
     id: 1,
     name: 'Featured',
-    list: [hamburger, hotTacos, vegBiryani],
+
+    list: [hamburger, vegBiryani, wrapSandwich],
   },
   {
     id: 2,
@@ -82,7 +83,7 @@ const menu = [
   {
     id: 3,
     name: 'Popular',
-    list: [hamburger, vegBiryani, wrapSandwich],
+    list: [hamburger, hotTacos, vegBiryani],
   },
   {
     id: 4,
@@ -97,7 +98,7 @@ const menu = [
   {
     id: 6,
     name: 'Recommended',
-    list: [hotTacos, hamburger, wrapSandwich],
+    list: [hotTacos, wrapSandwich, vegBiryani],
   },
 ]
 
