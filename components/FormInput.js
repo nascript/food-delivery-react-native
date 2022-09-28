@@ -24,7 +24,7 @@ const FormInput = ({
   errorMsg = '',
 }) => {
   return (
-    <View style={{ ...containerStyle }}>
+    <View style={{ ...containerStyle, marginTop: 10 }}>
       {/* Label & Error Message */}
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <Text style={{ color: COLORS.gray, ...FONTS.body4 }}>{label}</Text>
