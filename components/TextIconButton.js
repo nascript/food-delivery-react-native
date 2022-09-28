@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, TouchableOpacity, Image } from 'react-native'
-import { COLORS, SIZES, FONTS } from '../constants'
+import { COLORS, FONTS } from '../constants'
 
 const TextIconButton = ({
   label,
