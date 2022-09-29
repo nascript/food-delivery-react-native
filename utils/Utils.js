@@ -13,6 +13,15 @@ function validateEmail(value, setEmailError) {
     setEmailError('Invalid Email')
   }
 }
+function validateUserName(value, setUserNameError) {
+  if (value == '') {
+    setUserNameError('Username required')
+  } else if (value.length < 3) {
+    setUserNameError('Username must be 3 characters')
+  } else {
+    setUserNameError('')
+  }
+}
 
 function validatePassword(value, setPasswordError) {
   if (value.length < 9) {
@@ -26,6 +35,7 @@ const utils = {
   isValidEmail,
   validateEmail,
   validatePassword,
+  validateUserName,
 }
 
 export default utils

@@ -17,7 +17,7 @@ const AuthLayout = ({ title, subtitle, titleContainerStyle, children }) => {
         contentContainerStyle={{
           flex: 1,
           paddingHorizontal: SIZES.padding,
-          marginTop: SIZES.padding * 2,
+          // marginTop: SIZES.padding * 2,
         }}
       >
         {/* App Logo */}
