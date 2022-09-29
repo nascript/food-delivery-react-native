@@ -125,6 +125,7 @@ const SignIn = ({ navigation }) => {
               ? COLORS.primary
               : COLORS.transparentPrimray,
           }}
+          onPress={() => navigation.navigate('Otp')}
         />
         {/* Sig nup */}
         <View
