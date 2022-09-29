@@ -14,10 +14,15 @@ const AuthLayout = ({ title, subtitle, titleContainerStyle, children }) => {
     >
       <KeyboardAwareScrollView
         keyboardDismissMode='on-drag'
+        // enableOnAndroid={false}
+        // extraHeight={SIZES.padding * 3}
+        // extraScrollHeight={SIZES.padding * 3}
+        // enableAutomaticScroll={true}
         contentContainerStyle={{
           flex: 1,
           paddingHorizontal: SIZES.padding,
-          // marginTop: SIZES.padding * 2,
+          marginTop: SIZES.padding * 2,
+          // backgroundColor: COLORS.primary,
         }}
       >
         {/* App Logo */}

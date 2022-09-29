@@ -38,7 +38,10 @@ const SignIn = ({ navigation }) => {
       title='Getting Started'
       subtitle='Create an account to continue'
     >
-      <KeyboardAwareScrollView keyboardDismissMode='on-drag'>
+      <KeyboardAwareScrollView
+      // keyboardDismissMode='on-drag'
+      // enableAutomaticScroll={true}
+      >
         <View style={{ flex: 1, marginTop: SIZES.padding * 2 }}>
           {/* Form Input */}
 
